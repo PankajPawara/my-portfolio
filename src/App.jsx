@@ -15,7 +15,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <div className="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+      <div className="bg-gray-900 text-gray-100 min-h-screen min-w-screen flex flex-col">
         <Navbar />
         <div className="flex-grow">
           <Routes>
