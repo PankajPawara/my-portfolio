@@ -10,17 +10,19 @@ const HeroSection = () => {
       {/* Left Side - Text */}
       <div className="text-center md:text-left flex-1">
         <h1 className="text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-          Hi, I’m <span className="text-purple-500">Your Name</span>
+          Hi, I’m <span className="text-purple-500">Pankaj Pawara</span>
         </h1>
         <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
           I’m a{" "}
           <ReactTyped
             strings={[
+              "web Developer 🌐",
+              "MERN Stack Developer 🌐",
               "Full Stack Developer 💻",
               "Problem Solver 🧠",
               "Tech Enthusiast 🚀",
             ]}
-            typeSpeed={50}
+            typeSpeed={100}
             backSpeed={30}
             loop
           />
