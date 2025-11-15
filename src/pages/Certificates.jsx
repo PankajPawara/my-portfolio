@@ -2,8 +2,8 @@ import React from "react";
 
 const Certificates = () => {
   return (
-    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-12">
-      <h1 className="text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-10">
+    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-16">
+      <h1 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-8">
         Certificates
       </h1>
 

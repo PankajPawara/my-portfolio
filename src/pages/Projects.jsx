@@ -19,8 +19,8 @@ const Projects = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12">
-      <h2 className="text-3xl font-bold text-purple-500 mb-8">Projects</h2>
+    <section className="max-w-6xl mx-auto px-6 py-16">
+      <h2 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-8">Projects</h2>
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((p, i) => <ProjectCard key={i} {...p} />)}
       </div>

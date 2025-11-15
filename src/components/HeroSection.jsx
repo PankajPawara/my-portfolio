@@ -1,12 +1,13 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <section className="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16">
-      
+
       {/* Left Side - Text */}
       <div className="text-center md:text-left flex-1">
         <h1 className="text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
@@ -16,24 +17,27 @@ const HeroSection = () => {
           I’m a{" "}
           <ReactTyped
             strings={[
-              "web Developer 🌐",
-              "MERN Stack Developer 🌐",
               "Full Stack Developer 💻",
               "Problem Solver 🧠",
               "Tech Enthusiast 🚀",
+              "Team Player 🤝",
             ]}
-            typeSpeed={100}
-            backSpeed={30}
+            typeSpeed={20}
+            backSpeed={20}
             loop
           />
         </h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-2 max-w-md">
+          I am a passionate and detail-oriented <b>Full Stack Developer</b> eager to build scalable and user-friendly web applications.
+          I recently completed my B.Tech in Computer Engineering and am constantly learning new technologies like React, Node.js, and MongoDB.
+        </p>
         <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md">
           I love building modern, scalable web applications and learning new technologies to craft meaningful digital experiences.
         </p>
 
         <div className="flex justify-center md:justify-start gap-4 mb-6">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/PankajPawara"
             target="_blank"
             rel="noreferrer"
             className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
@@ -41,7 +45,7 @@ const HeroSection = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/pankaj-pawara-1a3026221/"
             target="_blank"
             rel="noreferrer"
             className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
@@ -49,10 +53,20 @@ const HeroSection = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto:pankajpawara1810@gmail.com"
+            target="_blank"
+            rel="noreferrer"
             className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
           >
             <FaEnvelope />
+          </a>
+          <a
+            href="https://leetcode.com/u/Pankaj_Pawara_/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
+          >
+            <SiLeetcode />
           </a>
         </div>
 
@@ -64,7 +78,7 @@ const HeroSection = () => {
             View Projects
           </Link>
           <a
-            href="/files/Resume.pdf"
+            href="/Resueme.pdf"
             download
             className="px-6 py-3 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white"
           >
@@ -76,9 +90,9 @@ const HeroSection = () => {
       {/* Right Side - Image */}
       <div className="flex-1 flex justify-center mb-10 md:mb-0">
         <img
-          src="/images/profile.png"
+          src="Profile.jpg"
           alt="Profile"
-          className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-purple-500 shadow-lg"
+          className="w-60 h-60 md:w-80 md:h-80 lg:w-100 lg:h-100 rounded-full object-cover border-4 border-purple-500 shadow-lg"
         />
       </div>
     </section>

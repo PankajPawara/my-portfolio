@@ -17,8 +17,8 @@ const Snippets = () => {
   const [selected, setSelected] = useState("HTML");
 
   return (
-    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-12">
-      <h1 className="text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-10">
+    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-16">
+      <h1 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-8">
         Code Snippets
       </h1>
 
@@ -28,11 +28,10 @@ const Snippets = () => {
           <button
             key={cat}
             onClick={() => setSelected(cat)}
-            className={`px-4 py-2 rounded-md ${
-              selected === cat
-                ? "bg-indigo-600 text-white"
+            className={`px-4 py-2 rounded-md ${selected === cat
+                ? "bg-purple-600 text-white"
                 : "bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-200"
-            }`}
+              }`}
           >
             {cat}
           </button>
