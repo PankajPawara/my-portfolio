@@ -14,8 +14,8 @@ const About = () => {
           I recently completed my B.Tech in Computer Engineering and am constantly learning new technologies like React, Node.js, and MongoDB.
         </p>
         <div className="flex gap-4">
-          <Link to="/projects" className="px-6 py-3 bg-purple-600 rounded-lg hover:bg-purple-700">View Projects</Link>
-          <Link to="/contact" className="px-6 py-3 border border-purple-600 rounded-lg hover:bg-purple-600 hover:text-white">Contact Me</Link>
+          <Link to="/projects" className="px-6 py-3 bg-purple-600 text-white border border-purple-600 rounded-lg hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">View Projects</Link>
+          <Link to="/contact" className="px-6 py-3 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">Contact Me</Link>
         </div>
       </div>
 

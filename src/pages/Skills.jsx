@@ -12,38 +12,41 @@ import { TbBrandXamarin } from "react-icons/tb";
 const Skills = () => {
 
   const frontend = [
-    { name: "HTML", icon: <FaHtml5 /> },
-    { name: "CSS", icon: <FaCss3 /> },
-    { name: "JS", icon: <IoLogoJavascript /> },
-    { name: "React.js", icon: <FaReact /> },
-  ];
-  const backend = [
-    { name: "Node.js", icon: <FaNodeJs /> },
-    { name: "Express.js", icon: <SiExpress /> },
-    { name: "Java", icon: <FaJava /> },
-    { name: "Spring Boot", icon: <SiSpringboot /> },
-    { name: "Hibernate", icon: <SiHibernate /> },
-  ];
+  { name: "HTML", icon: <FaHtml5 />, description: "Markup language used to structure web pages and content on the browser." },
+  { name: "CSS", icon: <FaCss3 />, description: "Stylesheet language used for designing attractive and responsive layouts." },
+  { name: "JS", icon: <IoLogoJavascript />, description: "Dynamic scripting language for interactive and functional web applications." },
+  { name: "React.js", icon: <FaReact />, description: "Frontend JavaScript library for building fast, dynamic, component-based UIs." },
+];
 
-  const database = [
-    { name: "MySQL", icon: <FaDatabase /> },
-    { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "SQLite", icon: < FaDatabase /> },
-  ];
+const backend = [
+  { name: "Node.js", icon: <FaNodeJs />, description: "JavaScript runtime environment used for server-side and backend development." },
+  { name: "Express.js", icon: <SiExpress />, description: "Minimal and flexible Node.js framework for building APIs and backend logic." },
+  { name: "Java", icon: <FaJava />, description: "Robust object-oriented programming language used in enterprise applications." },
+  { name: "Spring Boot", icon: <SiSpringboot />, description: "Java-based framework for building production-ready backend systems easily." },
+  { name: "Hibernate", icon: <SiHibernate />, description: "ORM framework that simplifies database communication using Java objects." },
+];
 
-  const platforms = [
-    { name: "VS Code", icon: <VscVscode /> },
-    { name: "Eclipse IDE", icon: <SiEclipseide /> },
-    { name: "Git", icon: <FaGitAlt /> },
-    { name: "Github", icon: <SiGithub /> },
-    { name: "Tomcat", icon: <SiApachetomcat /> },
-  ];
-  const other = [
-    { name: "REST API", icon: <IoSettings /> },
-    { name: "Stripe", icon: <FaStripeS /> },
-    { name: "Cloudinary", icon: <SiCloudinary /> },
-    { name: "Xamarin", icon: <TbBrandXamarin /> },
-  ];
+const database = [
+  { name: "MySQL", icon: <FaDatabase />, description: "Popular relational database used for structured data and transactions." },
+  { name: "MongoDB", icon: <SiMongodb />, description: "NoSQL document-based database ideal for scalable web applications." },
+  { name: "SQLite", icon: <FaDatabase />, description: "Lightweight embedded SQL database used for mobile & small apps." },
+];
+
+const platforms = [
+  { name: "VS Code", icon: <VscVscode />, description: "Lightweight yet powerful code editor with extensive extensions." },
+  { name: "Eclipse IDE", icon: <SiEclipseide />, description: "Java-focused IDE used for enterprise development." },
+  { name: "Git", icon: <FaGitAlt />, description: "Version control system for tracking changes in source code." },
+  { name: "Github", icon: <SiGithub />, description: "Cloud platform for hosting repositories and collaborating on code." },
+  { name: "Tomcat", icon: <SiApachetomcat />, description: "Java servlet container used to run Java-based web apps." },
+];
+
+const other = [
+  { name: "REST API", icon: <IoSettings />, description: "Architectural style for building structured, scalable APIs." },
+  { name: "Stripe", icon: <FaStripeS />, description: "Secure online payment platform used in modern web apps." },
+  { name: "Cloudinary", icon: <SiCloudinary />, description: "Cloud-based media storage and optimization service." },
+  { name: "Xamarin", icon: <TbBrandXamarin />, description: "Cross-platform mobile framework using C# for app development." },
+];
+
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 mb-24">

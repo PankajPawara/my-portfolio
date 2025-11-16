@@ -2,9 +2,20 @@ import React from "react";
 
 const SkillCard = ({ name, icon }) => {
   return (
-    <div className="flex flex-col items-center bg-gray-100 dark:bg-gray-800 rounded-xl p-4 hover:shadow-lg transition">
-      <div className="text-purple-500 text-3xl mb-2">{icon}</div>
-      <p className="text-gray-700 dark:text-gray-200">{name}</p>
+    <div
+      className="
+        flex flex-col items-center 
+        bg-gray-100 dark:bg-gray-800 
+        rounded-xl p-4 
+        transition-all duration-300 
+        hover:scale-105 
+        hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.7)]
+      "
+    >
+      <div className="text-purple-500 text-6xl mb-2">{icon}</div>
+      <p className="text-lg font-bold text-gray-700 dark:text-gray-200">
+        {name}
+      </p>
     </div>
   );
 };

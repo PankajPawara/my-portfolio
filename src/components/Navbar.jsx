@@ -1,35 +1,37 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { use, useContext, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
 
 const Navbar = () => {
+  const location = useLocation();
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
+  const isDark = theme === "dark";
 
   return (
     <nav className="bg-gray-100 dark:bg-gray-800 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-purple-800 dark:text-purple-500">
+        <Link to="/" className="sm:text-xl md:text-2xl font-extrabold text-purple-800 dark:text-purple-500">
           MyPortfolio
-        </h1>
+        </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 text-gray-800 dark:text-gray-200">
-          {["Home", "About", "Skills", "Projects", "Education","Certificates","Snippets", "Resume", "Contact"].map((item) => (
+        <div className="hidden md:flex md:gap-4 lg:gap-8 text-gray-800 dark:text-gray-200">
+          {["Home", "About", "Skills", "Projects", "Education","Certificates", "Resume", "Contact"].map((item) => (
             <Link
               key={item}
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className="text-gray-700 dark:text-gray-200 hover:text-purple-500"
+              className="text-gray-700 md:font-bold pb-1 dark:text-gray-300 hover:text-purple-500 border-b-3 hover:border-purple-500"
             >
               {item}
             </Link>
           ))}
 
           {/* Theme toggle */}
-          <button onClick={toggleTheme} className="ml-4">
+          <button onClick={toggleTheme}>
             {theme === "dark" ? <Sun /> : <Moon />}
           </button>
         </div>

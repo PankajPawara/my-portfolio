@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-16 mb-24">
 
       {/* Left Side - Text */}
       <div className="text-center md:text-left flex-1">
@@ -73,14 +73,14 @@ const HeroSection = () => {
         <div className="flex justify-center md:justify-start gap-4">
           <Link
             to="/projects"
-            className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
+            className="px-6 py-3 bg-purple-600 text-white border border-purple-600 rounded-lg hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
           >
             View Projects
           </Link>
           <a
-            href="/Resueme.pdf"
+            href="/Resume.pdf"
             download
-            className="px-6 py-3 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white"
+            className="px-6 py-3 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
           >
             Download Resume
           </a>
@@ -88,11 +88,11 @@ const HeroSection = () => {
       </div>
 
       {/* Right Side - Image */}
-      <div className="flex-1 flex justify-center mb-10 md:mb-0">
+      <div className="flex-1 flex justify-center mb-10 md:mb-0 ">
         <img
           src="Profile.jpg"
           alt="Profile"
-          className="w-60 h-60 md:w-80 md:h-80 lg:w-100 lg:h-100 rounded-full object-cover border-4 border-purple-500 shadow-lg"
+          className="w-60 h-60 md:w-80 md:h-80 lg:w-100 lg:h-100 rounded-full object-cover border-4 border-purple-500 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_6px_rgba(168,85,247,0.9)]"
         />
       </div>
     </section>

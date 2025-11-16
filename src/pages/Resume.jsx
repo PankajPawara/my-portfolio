@@ -28,7 +28,7 @@ const Resume = () => {
           <a
             href="/Resume.pdf"
             download
-            className="px-6 py-3 bg-purple-600 rounded-full hover:bg-purple-700 transition duration-300"
+            className="px-6 py-3 bg-purple-600 text-white border border-purple-600 rounded-lg hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
           >
             Download Resume
           </a>
@@ -36,7 +36,7 @@ const Resume = () => {
             href="https://drive.google.com/your-resume-link" // optional public link
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-purple-500 rounded-full hover:bg-purple-500 hover:text-white transition duration-300"
+            className="px-6 py-3 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
           >
             View on Google Drive
           </a>

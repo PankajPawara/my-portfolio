@@ -23,7 +23,7 @@ const Snippets = () => {
       </h1>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-4 mb-8">
+      <div className="flex flex-wrap justify-center gap-4 mb-8 ">
         {Object.keys(categories).map((cat) => (
           <button
             key={cat}
@@ -31,7 +31,7 @@ const Snippets = () => {
             className={`px-4 py-2 rounded-md ${selected === cat
                 ? "bg-purple-600 text-white"
                 : "bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-200"
-              }`}
+              } transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]`}
           >
             {cat}
           </button>
