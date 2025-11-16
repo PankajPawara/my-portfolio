@@ -1,12 +1,13 @@
 import React from "react";
 import SkillCard from "../components/SkillCard";
-import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3, FaJs, FaJava, FaGitAlt, FaStripeS } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3, FaJs, FaJava, FaGitAlt, FaStripeS, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiApachetomcat, SiCloudinary, SiEclipseide, SiExpress, SiGithub, SiHibernate, SiMongodb, SiSpringboot } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { data } from "react-router-dom";
 import { IoSettings } from "react-icons/io5";
 import { TbBrandXamarin } from "react-icons/tb";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 
 const Skills = () => {
@@ -14,8 +15,10 @@ const Skills = () => {
   const frontend = [
   { name: "HTML", icon: <FaHtml5 />, description: "Markup language used to structure web pages and content on the browser." },
   { name: "CSS", icon: <FaCss3 />, description: "Stylesheet language used for designing attractive and responsive layouts." },
-  { name: "JS", icon: <IoLogoJavascript />, description: "Dynamic scripting language for interactive and functional web applications." },
+  { name: "JavaScript", icon: <FaJs />, description: "High-level programming language that enables interactive web pages." },
   { name: "React.js", icon: <FaReact />, description: "Frontend JavaScript library for building fast, dynamic, component-based UIs." },
+  {name: "Tailwind CSS", icon: <RiTailwindCssFill />, description: "Utility-first CSS framework for rapidly building custom user interfaces." },
+  {name:"Bootstrap", icon: <FaBootstrap />, description: "Popular CSS framework for developing responsive and mobile-first websites."}
 ];
 
 const backend = [
@@ -54,7 +57,7 @@ const other = [
 
       {/* Frontend Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Frontend Skills</h2>
+        <h2 className="text-2xl font-bold text-purple-400 mb-4">Frontend:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {frontend.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -63,7 +66,7 @@ const other = [
 
       {/* Backend Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Backend Skills</h2>
+        <h2 className="text-2xl font-bold text-purple-400 mb-4">Backend:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {backend.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -72,7 +75,7 @@ const other = [
 
       {/* Database Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Database Skills</h2>
+        <h2 className="text-2xl font-bold text-purple-400 mb-4">Database:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {database.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -81,7 +84,7 @@ const other = [
 
       {/* Tools Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Tools Skills</h2>
+        <h2 className="text-2xl font-bold text-purple-400 mb-4">Tools:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {platforms.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -90,7 +93,7 @@ const other = [
 
       {/* Other Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Other Skills</h2>
+        <h2 className="text-2xl font-bold text-purple-400 mb-4">Other:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {other.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>

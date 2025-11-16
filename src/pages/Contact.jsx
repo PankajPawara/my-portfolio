@@ -34,6 +34,7 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input type="text" name="user_name" placeholder="Your Name" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-md" required />
         <input type="email" name="user_email" placeholder="Your Email" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-md" required />
+        <input type="number" name="user_phone" placeholder="Your Phone Number" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-md" required />
         <textarea name="message" rows="5" placeholder="Your Message" className="p-3 bg-gray-100 dark:bg-gray-800 rounded-md" required />
         <button type="submit" className="px-6 py-3 bg-purple-600 text-white border border-purple-600 rounded-lg hover:bg-transparent transition-all duration-300 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">Send Message</button>
       </form>

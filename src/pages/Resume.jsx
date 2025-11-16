@@ -19,7 +19,7 @@ const Resume = () => {
           <iframe
             src="/Resume.pdf"
             title="My Resume"
-            className="w-full h-300 border-none"
+            className="w-full h-300 object-cover border-none"
           ></iframe>
         </div>
 
