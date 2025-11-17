@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <>
-      <h2 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-400 mt-12">
+      <h2 className="text-4xl font-extrabold text-center text-purple-600 mt-12">
         Let’s Connect
       </h2>
       <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10 text-center">
@@ -45,13 +45,13 @@ const Contact = () => {
 
       <section className="max-w-xl mx-auto px-6 pb-24">
           
-          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 border-1 border-gray-300 bg-gray-200 dark:bg-gray-800 dark:border-gray-800 rounded-lg p-5 shadow-xl">
             
             <input
               type="text"
               name="user_name"
               placeholder="Your Name"
-              className="p-3 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-200 border border-transparent focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition"
+              className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 shadow border border-transparent focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition"
               required
             />
 
@@ -59,7 +59,7 @@ const Contact = () => {
               type="email"
               name="user_email"
               placeholder="Your Email"
-              className="p-3 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-200 border border-transparent focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition"
+              className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 shadow border border-transparent focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition"
               required
             />
 
@@ -68,7 +68,7 @@ const Contact = () => {
               inputMode="tel"
               name="user_phone"
               placeholder="Your Phone Number"
-              className="p-3 rounded-lg bg-gray-200  dark:bg-gray-700 text-gray-900 dark:text-gray-200 border border-transparent focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition"
+              className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 shadow border border-transparent focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition"
               required
             />
 
@@ -76,7 +76,7 @@ const Contact = () => {
               name="message"
               rows="5"
               placeholder="Your Message"
-              className="p-3 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-200 border border-transparent focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition"
+              className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200 shadow border border-transparent focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition"
               required
             ></textarea>
 
@@ -91,7 +91,7 @@ const Contact = () => {
             {/* Send Button */}
             <button
               type="submit"
-              className="mt-2 px-6 py-3 bg-purple-600 text-white text-lg font-semibold rounded-lg border border-purple-600 hover:bg-transparent hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:shadow-[0_0_15px_4px_rgba(147,51,234,0.8)]"
+              className="mt-2 px-6 py-3 bg-purple-600 text-white text-lg font-semibold rounded-lg shadow border border-purple-600 hover:bg-transparent hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:shadow-[0_0_15px_4px_rgba(147,51,234,0.8)]"
             >
               Send Message 
             </button>

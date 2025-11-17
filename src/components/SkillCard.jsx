@@ -9,6 +9,8 @@ const SkillCard = ({ name, icon }) => {
         rounded-xl p-4 
         transition-all duration-300 
         hover:scale-105 
+        shadow-lg border 
+        border-gray-300 dark:border-gray-700
         hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.7)]
       "
     >

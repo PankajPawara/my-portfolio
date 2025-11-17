@@ -108,13 +108,13 @@ const Certificates = () => {
   ]
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 mb-24">
-      <h1 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-10">
+      <h1 className="text-4xl font-extrabold text-center text-purple-500 mb-10">
         Certificates
       </h1>
 
       {/* Courses */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">
           Courses:
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
@@ -123,10 +123,11 @@ const Certificates = () => {
           ))}
         </div>
       </div>
+      <hr className="my-8 border-gray-700" />
 
       {/* Participations */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">
           Participations:
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

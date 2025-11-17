@@ -54,12 +54,12 @@ const Education = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-16">
+    <section className="min-h-screen bg-gray-200 dark:bg-gray-900 px-6 py-16">
           <header className="mb-8 text-center">
             <h1 className="text-4xl font-extrabold text-purple-600 dark:text-purple-500 mb-4">
               Education
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl text-center mx-auto">
+            <p className="text-gray-700 dark:text-gray-300 max-w-2xl text-center mx-auto">
               A concise academic timeline highlighting my degrees, institutions, grades,
               and honors.
             </p>
@@ -72,7 +72,7 @@ const Education = () => {
             {educationData.map((edu, idx) => (
               <article
                 key={idx}
-                className="relative border-l-8 border-purple-600 hover:border-purple-500 bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700
+                className="relative border-l-8 border-gray-400 hover:border-purple-500 bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700
                   shadow-sm hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)] hover:scale-[1.01] transition-all duration-300"
               >
                 {/* Left accent badge for honors (if any) */}
@@ -80,7 +80,7 @@ const Education = () => {
                   <div className="absolute -top-3 right-4">
                     <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full 
                       bg-gradient-to-r from-yellow-300 to-yellow-500 text-gray-900 font-semibold 
-                      shadow-[0_0_12px_rgba(255,215,0,0.85)] animate-pulse">
+                      shadow-[0_0_12px_rgba(255,215,0,0.85)] animate-pulse border border-yellow-600 z-10">
                       <GrAchievement /> {edu.honors}
                     </span>
                   </div>
@@ -96,7 +96,7 @@ const Education = () => {
                   </div>
 
                   <div className="flex-1">
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                    <h2 className="text-2xl font-bold text-purple-600 dark:text-gray-100">
                       {edu.degree}
                     </h2>
                     <p className="mt-1 text-lg font-medium text-gray-700 dark:text-purple-200 flex items-center gap-2">
@@ -110,7 +110,7 @@ const Education = () => {
                       <span className="flex items-center gap-2">
                         <FaCalendarAlt /> <strong>{edu.duration}</strong>
                       </span>
-                      <span className="text-sm px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-md">
+                      <span className="text-sm font-semibold px-2 py-1 bg-orange-200 dark:bg-orange-500 rounded-md">
                         {edu.grade}
                       </span>
                     </div>

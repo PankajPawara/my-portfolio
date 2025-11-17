@@ -22,12 +22,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-100 dark:bg-gray-800 shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 flex gap-4 justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-4 flex md:gap-2 lg:gap-4 justify-between items-center h-16">
         
         {/* Logo */}
         <Link
           to="/"
-          className="sm:text-xl md:text-2xl font-extrabold text-purple-800 dark:text-purple-500"
+          className="sm:text-xl md:text-2xl font-extrabold text-purple-500"
         >
           MyPortfolio
         </Link>
@@ -38,10 +38,10 @@ const Navbar = () => {
             <Link
               key={item}
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-              className={`pb-1 md:font-bold text-gray-700 dark:text-gray-400 hover:text-purple-500 hover:scale-110 transition ${
+              className={`pb-1 font-bold text-gray-700 dark:text-gray-300 hover:text-purple-500 hover:scale-110 transition ${
                 location.pathname ===
                 (item === "Home" ? "/" : `/${item.toLowerCase()}`)
-                  ? "dark:text-purple-500 border-b-4 border-purple-500"
+                  ? "font-extrabold text-purple-600 border-b-4 border-purple-500"
                   : ""
               }`}
             >
@@ -50,7 +50,7 @@ const Navbar = () => {
           ))}
 
           {/* Theme Toggle */}
-          {/* <button onClick={toggleTheme} className="ml-2">
+          {/* <button onClick={toggleTheme} className="ml-2 text-gray-800 dark:text-gray-200">
             {theme === "dark" ? <Sun /> : <Moon />}
           </button> */}
         </div>

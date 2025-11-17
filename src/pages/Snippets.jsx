@@ -17,7 +17,7 @@ const Snippets = () => {
   const [selected, setSelected] = useState("HTML");
 
   return (
-    <section className="min-h-screen bg-gray-100 dark:bg-gray-900 px-6 py-16">
+    <section className="min-h-screen bg-gray-200 dark:bg-gray-900 px-6 py-16">
       <h1 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-8">
         Code Snippets
       </h1>
@@ -39,7 +39,7 @@ const Snippets = () => {
       </div>
 
       {/* Code Box */}
-      <div className="max-w-4xl mx-auto bg-gray-800 text-green-300 p-6 rounded-lg shadow-lg overflow-auto">
+      <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-900 text-blue-700 dark:text-green-300 p-6 rounded-lg shadow-lg overflow-auto">
         <pre>
           <code>{categories[selected]}</code>
         </pre>

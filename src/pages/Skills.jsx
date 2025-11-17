@@ -52,12 +52,12 @@ const other = [
 
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16 mb-24">
-      <h2 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-8">My Skills</h2>
+    <section className="max-w-4xl mx-auto px-6 py-16 mb-24">
+      <h2 className="text-4xl font-extrabold text-center text-purple-500 mb-8">My Skills</h2>
 
       {/* Frontend Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Frontend:</h2>
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">Frontend:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {frontend.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -66,7 +66,7 @@ const other = [
 
       {/* Backend Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Backend:</h2>
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">Backend:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {backend.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -75,7 +75,7 @@ const other = [
 
       {/* Database Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Database:</h2>
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">Database:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {database.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -84,7 +84,7 @@ const other = [
 
       {/* Tools Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Tools:</h2>
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">Tools:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {platforms.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>
@@ -93,7 +93,7 @@ const other = [
 
       {/* Other Skills */}
       <div>
-        <h2 className="text-2xl font-bold text-purple-400 mb-4">Other:</h2>
+        <h2 className="text-2xl font-bold text-purple-500 mb-4">Other:</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {other.map((s, i) => <SkillCard key={i} {...s} />)}
         </div>

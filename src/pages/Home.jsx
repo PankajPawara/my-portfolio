@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaEye, FaDownload } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
@@ -42,7 +42,7 @@ const Home = () => {
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
-                    <FaGithub />
+                    <FaGithub size={35}/>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/pankaj-pawara-1a3026221/"
@@ -50,7 +50,7 @@ const Home = () => {
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
-                    <FaLinkedin />
+                    <FaLinkedin size={35}/>
                   </a>
                   <a
                     href="mailto:pankajpawara1810@gmail.com"
@@ -58,7 +58,7 @@ const Home = () => {
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
-                    <FaEnvelope />
+                    <FaEnvelope size={35} />
                   </a>
                   <a
                     href="https://leetcode.com/u/Pankaj_Pawara_/"
@@ -66,23 +66,23 @@ const Home = () => {
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
-                    <SiLeetcode />
+                    <SiLeetcode size={35} />
                   </a>
                 </div>
         
                 <div className="flex justify-center md:justify-start gap-4">
                   <Link
                     to="/projects"
-                    className="px-6 py-3 bg-purple-600 text-white border border-purple-600 rounded-lg hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 font-bold dark:text-white border border-purple-600 rounded-lg hover:text-purple-500 hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
                   >
-                    View Projects
+                    <FaEye size={20} /> View Projects
                   </Link>
                   <a
                     href="/Resume.pdf"
                     download
-                    className="px-6 py-3 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
+                    className="inline-flex items-center gap-2 px-6 py-3 border border-purple-600 font-bold rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
                   >
-                    Download Resume
+                   <FaDownload /> Download Resume
                   </a>
                 </div>
               </div>
