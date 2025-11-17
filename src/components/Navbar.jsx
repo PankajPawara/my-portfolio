@@ -50,9 +50,9 @@ const Navbar = () => {
           ))}
 
           {/* Theme Toggle */}
-          <button onClick={toggleTheme} className="ml-2">
+          {/* <button onClick={toggleTheme} className="ml-2">
             {theme === "dark" ? <Sun /> : <Moon />}
-          </button>
+          </button> */}
         </div>
 
         {/* Mobile Menu Button */}

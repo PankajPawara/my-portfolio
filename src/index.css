@@ -1,5 +1,12 @@
 @import "tailwindcss";
+@import 'react-pdf/dist/Page/AnnotationLayer.css';
+@import 'react-pdf/dist/Page/TextLayer.css';
+
 :root{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     scrollbar-width: none;
 }
 ::-webkit-scrollbar {
