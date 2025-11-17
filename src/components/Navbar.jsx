@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className=" hidden md:flex md:gap-4 lg:gap-8 items-center overflow-x-auto">
+        <div className=" hidden md:flex md:gap-4 lg:gap-8 items-center overflow-x-auto px-2">
           {pages.map((item) => (
             <Link
               key={item}

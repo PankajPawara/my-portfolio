@@ -13,10 +13,14 @@ import Snippets from "./pages/Snippets";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import BackToTop from "./components/BackToTop";
+import { Toaster } from "react-hot-toast";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+      <Toaster position="top-center" />
       <div className="bg-gray-900 text-gray-100 min-h-screen min-w-screen flex flex-col">
         <Navbar />
         <div className="flex-grow">

@@ -4,44 +4,49 @@ import ProjectCard from "../components/ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "SkillForge LMS",
-      desc: "A full-stack Learning Management System featuring user roles, course management, secure payments, video hosting, and progress tracking.",
-      tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Stripe"],
-      github: "https://github.com/yourname/skillforge",
-      live: "https://skillforge-demo.vercel.app"
-    },
-    {
-      title: "CloudNotes",
-      desc: "A cloud-based notes platform with JWT authentication, secure access, search, and real-time sync features.",
-      tech: ["React", "Express", "MongoDB", "JWT"],
-      github: "https://github.com/yourname/cloudnotes",
-    },
-    {
-      title: "Portfolio Website",
-      desc: "A fully responsive personal portfolio built using React + Tailwind with dark mode, animations, and smooth interactions.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-      github: "https://github.com/yourname/portfolio",
-      live: "https://your-portfolio.vercel.app"
-    },
-    {
-      title: "E-Commerce API",
-      desc: "A secure backend API with authentication, product management, orders, cart, and payment integration.",
-      tech: ["Node.js", "Express", "MongoDB", "JWT"],
-      github: "https://github.com/yourname/ecommerce-api",
-    },
-    {
+      img:"https://github.com/PankajPawara/Assets/blob/main/studentdash.png?raw=true",
       title: "Student Management Dashboard",
       desc: "A powerful dashboard with CRUD operations, filtering, sorting, form validations, and responsive UI.",
       tech: ["React", "ShadCN UI", "Tailwind"],
-      github: "https://github.com/yourname/student-dashboard",
+      github: "https://github.com/PankajPawara/Student-Dashboard-repo",
+      live: "https://pankajpawara.github.io/Student-Dashboard-repo/",
+      status: "Completed"
     },
     {
-      title: "WeatherPulse",
-      desc: "Weather app with live API data, animated UI, and dynamic backgrounds based on conditions.",
-      tech: ["React", "OpenWeather API", "CSS Animations"],
-      github: "https://github.com/yourname/weatherpulse",
-      live: "https://weatherpulse-demo.vercel.app"
-    }
+      img:"https://github.com/PankajPawara/Assets/blob/main/cloudnotes.png?raw=true",
+      title: "CloudNotes",
+      desc: "A cloud-based notes platform with JWT authentication, secure access, search, and real-time sync features.",
+      tech: ["React", "Express", "MongoDB", "JWT"],
+      github: "https://github.com/PankajPawara/CloudNotes-A-Note-keeping-website",
+      live: "https://cloudnotes-sj43.onrender.com",
+      status: "Completed"
+    },
+    {
+      img:"https://github.com/PankajPawara/Assets/blob/main/skillforge.png?raw=true",
+      title: "SkillForge LMS",
+      desc: "A full-stack Learning Management System featuring user roles, course management, secure payments, video hosting, and progress tracking.",
+      tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Stripe"],
+      // github: "https://github.com/yourname/skillforge",
+      // live: "https://skillforge-demo.vercel.app"
+      status: "In Progress"
+    },
+    {
+      img:"https://github.com/PankajPawara/Assets/blob/main/dabba.png?raw=true",
+      title: "Dabba.com - Mess Management System",
+      desc: "A comprehensive mess management system with user roles, meal tracking, expense management, and real-time notifications.",
+      tech: ["Java", "SpringBoot", "MySQL", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/PankajPawara/Dabba.com-MessManagementSystem",
+      status: "In Progress"
+    },
+    {
+      img:"https://github.com/PankajPawara/Assets/blob/main/portfolio.png?raw=true",
+      title: "My Portfolio Website",
+      desc: "A fully responsive personal portfolio built using React + Tailwind with dark mode, animations, and smooth interactions.",
+      tech: ["React", "Tailwind", "Framer Motion"],
+      // github: "https://github.com/yourname/portfolio",
+      // live: "https://your-portfolio.vercel.app"
+      status: "In Progress"
+    },
   ];
 
   return (

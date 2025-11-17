@@ -5,7 +5,7 @@ import { MdSchool } from 'react-icons/md'
 const CertificateCard = ({ item }) => {
     return (
         <div className="bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(147,51,234,0.8)]">
-            <img src={`/${item.img}.png`} alt={item.title} className=' w-full overflow-hidden h-contain p-2 rounded-t-xl'></img>
+            <img src={item.img} alt={item.title} className='w-full overflow-hidden object-contain p-2 rounded-t-xl'></img>
             <div className="relative flex items-start gap-4 px-6 py-4 pt-2">
                 {/* Badge Image (if available) */}
                 {item.badge && (
