@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
+  const [numPages, setNumPages] = useState(null);
+
   return (
     <section className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-6 py-16">
       <div className="max-w-4xl w-full text-center">
@@ -14,14 +18,24 @@ const Resume = () => {
           You can view my professional resume below or download it for offline access.
         </p>
 
-        {/* Resume Preview (iframe for PDF) */}
-        <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mb-8">
-          <iframe
-            src="/Resume.pdf"
-            title="My Resume"
-            className="w-full h-300 object-cover border-none"
-          ></iframe>
+        {/* <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mb-8"> */}
+          {/* Resume Preview */}
+        <div className="rounded-lg shadow-lg mb-8 flex justify-center">
+          <Document
+            file="/Resume.pdf"
+            loading={<p className="text-white">Loading Resume...</p>}
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+          >
+            <Page
+              pageNumber={1}
+              renderAnnotationLayer={false}
+              renderTextLayer={false}
+              className="pdf-page border border-gray-700"
+              width={window.innerWidth > 768 ? 650 : window.innerWidth - 40}
+            />
+          </Document>
         </div>
+        {/* </div> */}
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

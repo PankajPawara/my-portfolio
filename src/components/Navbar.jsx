@@ -15,7 +15,7 @@ const Navbar = () => {
     "Projects",
     "Education",
     "Certificates",
-    "Snippets",
+    // "Snippets",
     "Resume",
     "Contact",
   ];
@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex md:gap-4 lg:gap-8 items-center">
+        <div className=" hidden md:flex md:gap-4 lg:gap-8 items-center overflow-x-auto">
           {pages.map((item) => (
             <Link
               key={item}
@@ -41,7 +41,7 @@ const Navbar = () => {
               className={`pb-1 md:font-bold text-gray-700 dark:text-gray-400 hover:text-purple-500 hover:scale-110 transition ${
                 location.pathname ===
                 (item === "Home" ? "/" : `/${item.toLowerCase()}`)
-                  ? "dark:text-purple-500 border-b-2 border-purple-500"
+                  ? "dark:text-purple-500 border-b-4 border-purple-500"
                   : ""
               }`}
             >
@@ -107,13 +107,13 @@ const Navbar = () => {
           ))}
 
           {/* Theme Toggle */}
-          <button
+          {/* <button
             onClick={toggleTheme}
             className="mt-6 flex items-center gap-3 text-purple-600 dark:text-gray-200 text-lg font-extrabold"
           >
             {theme === "dark" ? <Sun /> : <Moon />}
             {theme === "dark" ? "Light" : "Dark"} Mode
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
