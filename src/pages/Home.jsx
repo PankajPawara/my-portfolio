@@ -36,38 +36,37 @@ const Home = () => {
                 </p>
         
                 <div className="flex justify-center md:justify-start gap-4 mb-6">
-                  <a
-                    href="https://github.com/PankajPawara"
+                  <Link
+                    to="https://github.com/PankajPawara"
                     target="_blank"
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
                     <FaGithub size={35}/>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/pankaj-pawara-1a3026221/"
+                  </Link>
+                  <Link
+                    to="https://www.linkedin.com/in/pankaj-pawara-1a3026221/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
                     <FaLinkedin size={35}/>
-                  </a>
-                  <a
-                    href="mailto:pankajpawara1810@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
-                  >
-                    <FaEnvelope size={35} />
-                  </a>
-                  <a
-                    href="https://leetcode.com/u/Pankaj_Pawara_/"
+                  </Link>
+                  <Link
+                    to="https://leetcode.com/u/Pankaj_Pawara_/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
                   >
                     <SiLeetcode size={35} />
-                  </a>
+                  </Link>
+                  <Link
+                    to="/contact"
+                    rel="noreferrer"
+                    className="text-gray-700 dark:text-gray-300 text-2xl hover:text-purple-500"
+                  >
+                    <FaEnvelope size={35} />
+                  </Link>
                 </div>
         
                 <div className="flex justify-center md:justify-start gap-4">

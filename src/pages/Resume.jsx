@@ -67,7 +67,7 @@ const Resume = () => {
           </a>
 
           <a
-            href="https://drive.google.com/your-resume-link"
+            href="https://drive.google.com/file/d/1myqfHWS6EkCxX4bzWW_MTaOcE061Y2wH/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-purple-600 font-bold rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"

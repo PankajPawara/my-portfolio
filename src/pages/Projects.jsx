@@ -3,6 +3,15 @@ import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
   const projects = [
+     {
+      img:"https://github.com/PankajPawara/Assets/blob/main/portfolio.png?raw=true",
+      title: "My Portfolio Website",
+      desc: "A fully responsive personal portfolio built using React + Tailwind with dark mode, animations, and smooth interactions.",
+      tech: ["React", "Tailwind", "Framer Motion"],
+      // github: "https://github.com/yourname/portfolio",
+      // live: "https://your-portfolio.vercel.app"
+      status: "Completed"
+    },
     {
       img:"https://github.com/PankajPawara/Assets/blob/main/studentdash.png?raw=true",
       title: "Student Management Dashboard",
@@ -38,20 +47,12 @@ const Projects = () => {
       github: "https://github.com/PankajPawara/Dabba.com-MessManagementSystem",
       status: "In Progress"
     },
-    {
-      img:"https://github.com/PankajPawara/Assets/blob/main/portfolio.png?raw=true",
-      title: "My Portfolio Website",
-      desc: "A fully responsive personal portfolio built using React + Tailwind with dark mode, animations, and smooth interactions.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-      // github: "https://github.com/yourname/portfolio",
-      // live: "https://your-portfolio.vercel.app"
-      status: "In Progress"
-    },
+   
   ];
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-16">
-      <h2 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-12">
+      <h2 className="text-4xl font-extrabold text-center text-purple-500 mb-12">
         My Projects
       </h2>
 

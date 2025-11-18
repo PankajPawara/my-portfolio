@@ -18,7 +18,7 @@ const Snippets = () => {
 
   return (
     <section className="min-h-screen bg-gray-200 dark:bg-gray-900 px-6 py-16">
-      <h1 className="text-4xl font-extrabold text-center text-purple-600 dark:text-purple-500 mb-8">
+      <h1 className="text-4xl font-extrabold text-center text-purple-500 mb-8">
         Code Snippets
       </h1>
 

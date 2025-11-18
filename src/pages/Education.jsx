@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCalendarAlt } from "react-icons/fa";
+import { FaCalendarAlt, FaExternalLinkAlt } from "react-icons/fa";
 import { FaBuildingColumns, FaSchool, FaDownload } from "react-icons/fa6";
 import { GrAchievement } from "react-icons/gr";
 import { MdSchool } from "react-icons/md";
@@ -56,7 +56,7 @@ const Education = () => {
   return (
     <section className="min-h-screen bg-gray-200 dark:bg-gray-900 px-6 py-16">
           <header className="mb-8 text-center">
-            <h1 className="text-4xl font-extrabold text-purple-600 dark:text-purple-500 mb-4">
+            <h1 className="text-4xl font-extrabold text-purple-500 mb-4">
               Education
             </h1>
             <p className="text-gray-700 dark:text-gray-300 max-w-2xl text-center mx-auto">
@@ -96,7 +96,7 @@ const Education = () => {
                   </div>
 
                   <div className="flex-1">
-                    <h2 className="text-2xl font-bold text-purple-600 dark:text-gray-100">
+                    <h2 className="text-2xl font-bold text-purple-600 dark:text-purple-500">
                       {edu.degree}
                     </h2>
                     <p className="mt-1 text-lg font-medium text-gray-700 dark:text-purple-200 flex items-center gap-2">
@@ -183,7 +183,7 @@ const Education = () => {
           <div className="bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700 shadow-sm">
             <h4 className="font-bold text-gray-900 dark:text-gray-100 mb-1">Want to discuss my career?</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Drop a message — I'm open to internships & roles.</p>
-            <a href="/contact" className="px-4 py-2 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">Go to Contact →</a>
+            <a href="/contact" className="inline-flex items-center gap-2 px-4 py-2 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">Go to Contact <FaExternalLinkAlt size={14} /></a>
           </div>
         </aside>
       </div>

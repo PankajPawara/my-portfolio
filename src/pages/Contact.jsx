@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <>
-      <h2 className="text-4xl font-extrabold text-center text-purple-600 mt-12">
+      <h2 className="text-4xl font-extrabold text-center text-purple-500 mt-12">
         Let’s Connect
       </h2>
       <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-10 text-center">

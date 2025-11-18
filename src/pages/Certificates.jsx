@@ -12,7 +12,7 @@ const Certificates = () => {
       to: "15 June 2025",
       mode: "Online",
       issuedDate: "16 June 2025",
-      url: "https://drive.google.com/file/d/1fbv8tDL_r10ERxxxBXO8cJtcOAnuCEp1/view?usp=drive_link",
+      url: "https://drive.google.com/file/d/1DOLNzLyFatBcgJ8lzOibd-WaUyeq56By/view?usp=drive_link",
       proof: "https://www.credly.com/badges/9e80e035-e92e-48bf-a111-5c5ef24e8a23/print",
       badge: "https://images.credly.com/size/680x680/images/e3541a0c-dd4a-4820-8052-5001006efc85/blob",
     },
@@ -103,7 +103,7 @@ const Certificates = () => {
       to: "13 March 2024",
       mode: "Online",
       issuedDate: "27 August 2024",
-      url: "https://drive.google.com/file/d/1CLXwWRfVx0kvfzuU7geHzJm2zeRxhj0_/view?usp=drive_link",
+      url: "https://drive.google.com/file/d/1G5Fcwoxd2VnUKrzNmdaRV1-kEK-PteD6/view?usp=drive_link",
     },
   ]
   return (
