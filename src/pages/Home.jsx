@@ -89,7 +89,7 @@ const Home = () => {
               {/* Right Side - Image */}
               <div className="flex-1 flex justify-center mb-10 md:mb-0 ">
                 <img
-                  src="Profile.jpg"
+                  src="Profile-pro.jpg"
                   alt="Profile"
                   className="w-60 h-60 md:w-80 md:h-80 lg:w-100 lg:h-100 rounded-full object-cover border-4 border-purple-500 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_6px_rgba(168,85,247,0.9)]"
                 />

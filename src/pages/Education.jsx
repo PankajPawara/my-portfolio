@@ -106,10 +106,10 @@ const Education = () => {
                       <FaBuildingColumns /> {edu.university}
                     </p>
 
-                    <div className="mt-3 flex flex-col sm:flex-row sm:items-center sm:gap-4 text-gray-600 dark:text-gray-300">
+                    <div className="mt-3 flex flex-row sm:items-center gap-4 text-gray-600 dark:text-gray-300">
                       <span className="flex items-center gap-2">
                         <FaCalendarAlt /> <strong>{edu.duration}</strong>
-                      </span>
+                      </span> | 
                       <span className="text-sm font-semibold px-2 py-1 bg-orange-200 dark:bg-orange-500 rounded-md">
                         {edu.grade}
                       </span>

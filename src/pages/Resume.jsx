@@ -42,7 +42,7 @@ const Resume = () => {
           {containerWidth > 0 && (
             <Document
               file="/Resume.pdf"
-              loading={<p className="text-white">Loading Resume...</p>}
+              loading={<p className="text-gray-700 dark:text-gray-300">Loading Resume...</p>}
             >
               <Page
                 pageNumber={1}
