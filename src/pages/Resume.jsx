@@ -1,3 +1,4 @@
+import { Loader } from "lucide-react";
 import React, { useState, useRef, useEffect } from "react";
 import { FaDownload, FaEye } from "react-icons/fa";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -42,7 +43,11 @@ const Resume = () => {
           {containerWidth > 0 && (
             <Document
               file="/Resume.pdf"
-              loading={<p className="text-gray-700 dark:text-gray-300">Loading Resume...</p>}
+              loading={<>
+                <Loader className="font-bold text-purple-500 animate-spin mx-auto mt-4" />
+                <p className="font-bold text-gray-700 dark:text-gray-300">Loading Resume...</p>
+              </>}
+
             >
               <Page
                 pageNumber={1}
@@ -63,10 +68,10 @@ const Resume = () => {
             download
             className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 font-bold dark:text-white border border-purple-600 rounded-lg hover:text-purple-500 hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
           >
-           <FaDownload /> Download Resume
+            <FaDownload /> Download Resume
           </a>
 
-          <a      
+          <a
             href="https://drive.google.com/file/d/1myqfHWS6EkCxX4bzWW_MTaOcE061Y2wH/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
