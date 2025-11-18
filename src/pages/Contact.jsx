@@ -10,10 +10,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // if (!captchaValue) {
-    //   toast.error("⚠ Please verify the CAPTCHA!");
-    //   return;
-    // }
+    if (!captchaValue) {
+      toast.error("⚠ Please verify the CAPTCHA!");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -24,12 +24,12 @@ const Contact = () => {
       )
       .then(
         () => {
-          toast.success("Message sent successfully! 🚀");
+          toast.success("Thank you! Your message has been received I will get back to you soon.");
           form.current.reset();
-          // setCaptchaValue(null);
+          setCaptchaValue(null);
         },
         () => {
-          toast.error("Failed to send message. Try again ❌");
+          toast.error("Failed to send message. Try again");
         }
       );
   };
@@ -81,12 +81,12 @@ const Contact = () => {
             ></textarea>
 
             {/* reCAPTCHA */}
-            {/* <div className="flex justify-center my-3">
+            <div className="flex justify-center my-3">
               <ReCAPTCHA
-                sitekey="6Lf0dw8sAAAAABjj286JQiBNZL8fg8uSqaGDuIvU"  // Replace with real site key
+                sitekey="6Lf0dw8sAAAAABjj286JQiBNZL8fg8uSqaGDuIvU"
                 onChange={(value) => setCaptchaValue(value)}
               />
-            </div> */}
+            </div>
 
             {/* Send Button */}
             <button
