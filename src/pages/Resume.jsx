@@ -66,7 +66,7 @@ const Resume = () => {
            <FaDownload /> Download Resume
           </a>
 
-          <a
+          <a      
             href="https://drive.google.com/file/d/1myqfHWS6EkCxX4bzWW_MTaOcE061Y2wH/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
