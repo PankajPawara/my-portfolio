@@ -9,7 +9,7 @@ const Projects = () => {
       desc: "A fully responsive personal portfolio built using React + Tailwind with dark mode, animations, and smooth interactions.",
       tech: ["React", "Tailwind", "Framer Motion"],
       github: "https://github.com/PankajPawara/my-portfolio",
-      live: "https://my-portfolio-twta.onrender.com",
+      live: "https://pankaj-pawara.onrender.com",
       status: "Completed"
     },
     {

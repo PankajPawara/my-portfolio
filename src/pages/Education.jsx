@@ -4,6 +4,7 @@ import { FaBuildingColumns, FaSchool, FaDownload } from "react-icons/fa6";
 import { GrAchievement } from "react-icons/gr";
 import { MdSchool } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 const Education = () => {
   const educationData = [
@@ -49,8 +50,8 @@ const Education = () => {
 
   // Right column highlights (certs & skills summary)
   const highlights = [
-    { title: "Java Full Stack", issuer: "Symbiosis Skills", year: "2024" },
-    { title: "Xamarin Mobile Apps", issuer: "Infotech Incorporate", year: "2023" },
+    { title: "Java Full Stack Developement", issuer: "Symbiosis Skills", year: "2024" },
+    { title: "Xamarin Mobile App Development", issuer: "Infotech Incorporate", year: "2023" },
   ];
 
   return (
@@ -171,7 +172,7 @@ const Education = () => {
             <h3 className="text-lg font-bold mb-2">Download Resume</h3>
             <p className="text-sm mb-4">Clean PDF version suitable for HR & recruiters.</p>
             <a
-              href="/resume.pdf"
+              href="/Resume.pdf"
               download
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 shadow px-4 py-2 rounded-md font-semibold transition"
             >
@@ -183,7 +184,7 @@ const Education = () => {
           <div className="bg-white dark:bg-gray-800 rounded-xl p-5 border border-gray-200 dark:border-gray-700 shadow-sm">
             <h4 className="font-bold text-gray-900 dark:text-gray-100 mb-1">Want to discuss my career?</h4>
             <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Drop a message — I'm open to internships & roles.</p>
-            <a href="/contact" className="inline-flex items-center gap-2 px-4 py-2 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">Go to Contact <FaExternalLinkAlt size={14} /></a>
+            <Link to="/contact" className="inline-flex items-center gap-2 px-4 py-2 border border-purple-600 rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]">Go to Contact <FaExternalLinkAlt size={14} /></Link>
           </div>
         </aside>
       </div>

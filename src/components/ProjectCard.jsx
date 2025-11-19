@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { FaCheckCircle, FaHourglassHalf } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, desc, img, tech = [], github, live, status }) => {
   return (
@@ -44,27 +45,27 @@ const ProjectCard = ({ title, desc, img, tech = [], github, live, status }) => {
         {/* Buttons */}
         <div className="flex gap-4">
           {github && (
-            <a
-              href={github}
+            <Link
+              to={github}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-4 py-2 border border-purple-600 font-bold rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
             >
               <Github size={20} />
               GitHub
-            </a>
+            </Link>
           )}
 
           {live && (
-            <a
-              href={live}
+            <Link
+              to={live}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-purple-600 font-bold dark:text-white border border-purple-600 rounded-lg hover:text-purple-500 hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
             >
               <ExternalLink size={20} />
               Live Demo
-            </a>
+            </Link>
           )}
         </div>
       </div>
