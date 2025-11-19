@@ -14,7 +14,7 @@ const Home = () => {
                   <p className="text-3xl">Hi, I’m</p> <span className="text-purple-500">Pankaj Pawara</span>
                 </h1>
                 <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-                  I’m a{" "}
+                  {" "}
                   <ReactTyped
                     strings={[
                       "Full Stack Developer 💻",
