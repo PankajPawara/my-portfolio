@@ -37,7 +37,7 @@ const Projects = () => {
       tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Stripe"],
       github: "https://github.com/PankajPawara/SkillForge",
       live: "https://skillforge-eo82.onrender.com",
-      status: "In Progress"
+      status: "Completed"
     },
     {
       img:"https://github.com/PankajPawara/Assets/blob/main/dabba.png?raw=true",
