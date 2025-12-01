@@ -35,8 +35,8 @@ const Projects = () => {
       title: "SkillForge LMS",
       desc: "A full-stack Learning Management System featuring user roles, course management, secure payments, video hosting, and progress tracking.",
       tech: ["React", "Node.js", "MongoDB", "Cloudinary", "Stripe"],
-      // github: "https://github.com/yourname/skillforge",
-      // live: "https://skillforge-demo.vercel.app"
+      github: "https://github.com/PankajPawara/SkillForge",
+      live: "https://skillforge-eo82.onrender.com",
       status: "In Progress"
     },
     {
