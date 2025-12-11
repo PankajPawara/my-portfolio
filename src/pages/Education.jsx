@@ -172,7 +172,7 @@ const Education = () => {
             <h3 className="text-lg font-bold mb-2">Download Resume</h3>
             <p className="text-sm mb-4">Clean PDF version suitable for HR & recruiters.</p>
             <a
-              href="/Resume.pdf"
+              href="/PANKAJ_PAWARA_RESUME.pdf"
               download
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 shadow px-4 py-2 rounded-md font-semibold transition"
             >

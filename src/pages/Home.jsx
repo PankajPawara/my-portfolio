@@ -77,7 +77,7 @@ const Home = () => {
                     <FaEye size={20} /> View Projects
                   </Link>
                   <a
-                    href="/Resume.pdf"
+                    href="/PANKAJ_PAWARA_RESUME.pdf"
                     download
                     className="inline-flex items-center gap-2 px-6 py-3 border border-purple-600 font-bold rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
                   >

@@ -43,7 +43,7 @@ const Resume = () => {
         >
           {containerWidth > 0 && (
             <Document
-              file="/Resume.pdf"
+              file="/PANKAJ_PAWARA_RESUME.pdf"
               loading={<>
                 <Loader className="font-bold text-purple-500 animate-spin mx-auto mt-4" />
                 <p className="font-bold text-gray-700 dark:text-gray-300">Loading Resume...</p>
@@ -65,7 +65,7 @@ const Resume = () => {
         {/* Button Row */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/Resume.pdf"
+            href="/PANKAJ_PAWARA_RESUME.pdf"
             download
             className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 font-bold dark:text-white border border-purple-600 rounded-lg hover:text-purple-500 hover:bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
           >
@@ -73,7 +73,7 @@ const Resume = () => {
           </a>
 
           <Link
-            to="https://drive.google.com/file/d/1myqfHWS6EkCxX4bzWW_MTaOcE061Y2wH/view?usp=drive_link"
+            to="https://drive.google.com/file/d/1gijB5znDcbvcrXI_eAbePdJ3s0rXAwLA/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-purple-600 font-bold rounded-lg text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_3px_rgba(147,51,234,0.8)]"
